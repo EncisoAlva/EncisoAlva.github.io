@@ -1,23 +1,72 @@
-# title information
-title: Julio C Enciso-Alva
-description: Personal webpage for professional purposes.
+# Set theme
+remote_theme: daviddarnes/alembic@main
 
-# standard configuration
-show_downloads: true
-theme: jekyll-theme-dinky
-lsi: false
-safe: true
-#source: https://github.com/EncisoAlva/EncisoAlva.github.io.git
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
 
-#remote_theme: pages-themes/dinky@v0.2.0
-#plugins:
-#- jekyll-remote-theme # add this line to the plugins list if you already have one
-#
-#theme: jekyll-theme-dinky
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-feed
+- jekyll-commonmark
+- jekyll-include-cache
+- jemoji
+- jekyll-remote-theme
+
+# Site settings
+url: 'https://mydomain.com'
+baseurl: ''
+title: 'My website'
+description: 'This is my new website'
+permalink: pretty
+logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+
+# Pagination
+paginate: 5
+paginate_path: blog/page:num
+
+# Header nav
+navigation_header:
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Blog
+  url: /blog/
+
+# Footer nav
+navigation_footer:
+- title: Back to top
+  url: "#top"
+
+# Collections
+collections:
+  posts:
+    title: Posts
+    output: true
+    description: "My thoughts and ideas"
+    feature_text: |
+      Welcome to my blog
+    feature_image: "https://picsum.photos/2560/600?image=866"
+
+# Collection settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post # Set the default layout for posts
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page # Set the default layout for pages

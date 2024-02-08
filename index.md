@@ -1,10 +1,8 @@
 ---
-layout: default
+title: Welcome to my website
+feature_image: "https://picsum.photos/1300/400?image=989"
+feature_text: |
+  ## Hello world
 ---
 
-**Site is down due to remodeling.**
-
-For the portfolio, refer to the following collection of links:
-
-[Collection of links](https://linktr.ee/encisoalvajc).
-
+There isn't much going on here yet, but watch this space
