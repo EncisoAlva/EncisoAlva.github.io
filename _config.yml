@@ -53,7 +53,7 @@ collections:
     title: Posts
     output: true
     description: "A bit of a log, a bit of usefl links"
-    feature_text: 'Welcome to my blog'
+    feature_text: ''
     feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
 
 # Collection settings

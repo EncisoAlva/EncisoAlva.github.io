@@ -1,9 +1,10 @@
 ---
-title: 'Good morning/day/evening y'all !! '
+title: 'Home Page'
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
+feature_text: ''
 ---
 
-## Welcome to my personal website!
+## Good morning/day/evening y'all !! 
 
 I am a PhD candidate Applied Mathematician at the University o Texas at Arlington.
 
