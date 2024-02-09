@@ -21,13 +21,11 @@ plugins:
 - jekyll-remote-theme
 
 # Site settings
-#url: ''
-#baseurl: ''
 title: 'Personal Webage of JC Enciso-Alva'
 description: 'Personal website for academic purposes'
 permalink: pretty
 author: Julio Cesar Enciso-Alva
-logo: 'https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/RBL.png'
+logo: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/RBL.png"
 
 # Pagination
 paginate: 5
