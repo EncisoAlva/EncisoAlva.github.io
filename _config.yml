@@ -37,6 +37,8 @@ navigation_header:
   url: /
 - title: About me
   url: /about/
+- title: Research
+  url: /research/
 - title: Blog
   url: /blog/
 
