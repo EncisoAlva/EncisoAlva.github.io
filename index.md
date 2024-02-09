@@ -1,14 +1,14 @@
 ---
 title: About me | Julio C Enciso-Alva
 feature_image: 'https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg'
-feature_text: # 
-Julio C. Enciso-Alva
-Welcome to my personal website!
+feature_text: Welcome to my personal website!
 ---
 
 Test 1
 
 Good morning/day/evening y'all !! 
+
+Test 1
 
 This is my personal website, still under construction. If you ask me 'where I learnt how to do websites?' then the answer is: right now, I'm still learning. 
 
