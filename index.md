@@ -1,6 +1,6 @@
 ---
 title: 'Home Page'
-feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg"
+feature_image: https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true
 feature_text: 'Welcome to my personal website!'
 ---
 
