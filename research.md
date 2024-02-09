@@ -1,8 +1,6 @@
 ---
-title: Research
+title: Research Interests
 ---
-
-## Research
 
 Electrical Source Imaging (ESI) is a family of methods for estimating the location of neural electrical sources inside the brain, based on recordings from electrodes located either at the scalp (EEG), brain cortex (ECoG), or stylets inside the brain (SEEG). Applications of ESI include non-invasive detection of epileptogenic zones.  
 
@@ -17,7 +15,3 @@ Past research projects are listed below:
 * Evaluation of fMRI-informed EEG-based ESI techniques. 
 * Validation of ESI techniques from ECoG data in a pig model. 
 * ESI from EEG during epilepsy on infants. 
-
-## Contact
-
-My preferred communication channel is mail: `juliocesar.encisoalva@mavs.uta.edu`, but also [LinkedIn](https://www.linkedin.com/in/julio-enciso-alva/).
