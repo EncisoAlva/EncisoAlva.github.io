@@ -1,5 +1,6 @@
 ---
 title: Research Interests
+feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
 ---
 
 Electrical Source Imaging (ESI) is a family of methods for estimating the location of neural electrical sources inside the brain, based on recordings from electrodes located either at the scalp (EEG), brain cortex (ECoG), or stylets inside the brain (SEEG). Applications of ESI include non-invasive detection of epileptogenic zones.  
