@@ -1,13 +1,13 @@
 ---
 title: About me | Julio C Enciso-Alva
-feature_image: "./img/banner_TB.jpg"
+feature_image: "banner_TB.jpg"
 feature_text: ## Julio C. Enciso-Alva
 Welcome to my personal website!
 ---
 
-Good morning/day evening y'all !! 
+Good morning/day/evening y'all !! 
 
-This is my personal website, still under construction. If you ask me 'where I learnt how to do websites?' then the answer is: right now, I'm still learning. More content will be added later.
+This is my personal website, still under construction. If you ask me 'where I learnt how to do websites?' then the answer is: right now, I'm still learning. 
 
 **I’m on the 2024 academic job market.**
 
