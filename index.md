@@ -1,7 +1,6 @@
 ---
 title: 'Good morning/day/evening y'all !!'
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
-feature_text: ''
 ---
 
 I am a PhD candidate Applied Mathematician at the University o Texas at Arlington.
