@@ -1,6 +1,6 @@
 ---
 title: About me | Julio C Enciso-Alva
-feature_image: "./img/banner_TB"
+feature_image: "./img/banner_TB.jpg"
 feature_text: ## Julio C. Enciso-Alva
 Welcome to my personal website!
 ---
