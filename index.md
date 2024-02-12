@@ -3,6 +3,8 @@ title: "Good morning/day/evening y'all !!"
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
 ---
 
+![Profile Picture](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/profile1.jpg?raw=true){:style="float: right;"}
+
 I am a PhD candidate Applied Mathematician at the University o Texas at Arlington.
 
 My research is about Inverse Problems via Convex Optimization with applications to Source Localisation and Virtual Electrodes from MEG/EEG data. 
