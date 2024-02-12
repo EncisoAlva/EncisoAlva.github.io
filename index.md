@@ -3,7 +3,7 @@ title: "Good morning/day/evening y'all !!"
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
 ---
 
-![Profile Picture](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/profile1.jpg?raw=true){:style="float: right; width: 100px; height:133px"}
+![Profile Picture](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/profile1.jpg?raw=true){:style="float: right; width: 250px; height:333px"}
 
 I am a PhD candidate Applied Mathematician at the University o Texas at Arlington.
 
