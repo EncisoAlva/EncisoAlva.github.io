@@ -1,7 +1,6 @@
 ---
 title: "Good morning/day/evening y'all !!"
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
-feature_text:"Julio C. Enciso-Alva"
 ---
 
 ![Profile Picture](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/profile1.jpg?raw=true){:style="float: right; width: 175px; height:233px"}
