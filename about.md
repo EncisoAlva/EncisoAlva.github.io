@@ -5,7 +5,7 @@ feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img
 
 Born in Pachuca de Soto, Hidalgo, Mexico. My name I refuse to abbreviate: Enciso from my father and Alva from my mother, as it was the custom where I was born. 
 
-Despite being kinda' autistic, I display regular human behaviour on numerous occassions. Outside work I often listen to music, play board games, read and write, or cook.
+Despite being kinda' autistic, I display regular human behaviour on numerous occassions. Outside work I often listen to music, play board games, read and write, cook, and collect curious trinkets.
 
 Fun findings from my hobbies:
 

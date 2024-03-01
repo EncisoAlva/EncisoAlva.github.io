@@ -12,9 +12,8 @@ excerpt: "Applied Math + Data Science"
 
 Currently, I am a PhD candidate Applied Mathematician at the University o Texas at Arlington.
 
-My research is about Inverse Problems via Convex Optimization with applications to Source Localisation and Virtual Electrodes from MEG/EEG data. 
-For  more details, please go to the [Research tab](research.md); but
-if you'd like something _less_ specfic, then I make math theory for better and cheaper imaging methods.
+My main research is about Inverse Problems and Mathematical Data Science via Convex Optimization, with applications to Computational Neuroscience and Imaging. 
+For  more details go to the [Research tab](research.md); for _less_ details, I make math formulas for better and cheaper imaging methods and I also do funky statistics.
 
 **I’m on the 2024 academic job market.**
 
