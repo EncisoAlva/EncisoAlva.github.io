@@ -1,7 +1,7 @@
 ---
 title: "Good morning/evening y'all !!"
 feature_text: |
-  # <span style="color:white;">Julio C. Enciso-Alva > </span>
+  # <span style="color:white;">Julio C. Enciso-Alva </span>
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 excerpt: "Applied Math + Data Science"
 ---
