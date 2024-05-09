@@ -1,19 +1,25 @@
 ---
 title: Research Interests
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
 ---
-
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 This part is under constant updates. I'm more a fan of visual than of words. Please check [these slides](/files/EncisoAlva_240226.pdf?raw=true) about my research, they were planned for a 3 minutes presentation.
 
 ...
 
 On a grand scale, my research is dedicated to solving equations in the form of
-{% raw %}
-\[ \mathbf{A} X = Y \]
-{% endraw %}
-where \( \mathbf{A} \) is a \( m\times n \) matrix. 
+$$ \mathbf{A} X = Y $$
+where $\mathbf{A}$ is a $m\times n$ matrix. 
 
 ...
 
