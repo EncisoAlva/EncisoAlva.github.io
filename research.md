@@ -9,6 +9,14 @@ This part is under constant updates. I'm more a fan of visual than of words. Ple
 
 ...
 
+On a grand scale, my research is dedicated to solving equations in the form of
+
+\[ \mathbf{A} X = Y \]
+  
+where \( \mathbf{A} \) is a \( m\times n \) matrix. 
+
+...
+
 Electrical Source Imaging (ESI) is a family of methods for estimating the location of neural electrical sources inside the brain, based on recordings from electrodes located either at the scalp (EEG), brain cortex (ECoG), or stylets inside the brain (SEEG). Applications of ESI include non-invasive detection of epileptogenic zones.  
 
 Electrode recordings are known to have a high resolution in time and a poor resolution in space, and ESI inherits these characteristics. The inclusion of additional modalities of data, such as fMRI, could be integrated in the ESI formulation to increase its resolution, speed, and robustness to noise. 
