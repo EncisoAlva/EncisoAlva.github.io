@@ -10,9 +10,9 @@ This part is under constant updates. I'm more a fan of visual than of words. Ple
 ...
 
 On a grand scale, my research is dedicated to solving equations in the form of
-
+{% raw %}
 \[ \mathbf{A} X = Y \]
-  
+{% endraw %}
 where \( \mathbf{A} \) is a \( m\times n \) matrix. 
 
 ...
