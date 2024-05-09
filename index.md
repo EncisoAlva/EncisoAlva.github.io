@@ -13,7 +13,7 @@ excerpt: "Applied Math + Data Science"
 Currently, I am a PhD candidate Applied Mathematician at the University o Texas at Arlington.
 
 My main research is Inverse Problems and Mathematical Data Science via Convex Optimization, with applications to Computational Neuroscience and Imaging. 
-For  more details go to the [Research tab](research.md).
+For  more details go to the [Research tab](https://encisoalva.github.io/research/).
 
 On a few words, I make methods for better and cheaper imaging, and I also do funky statistics.
 

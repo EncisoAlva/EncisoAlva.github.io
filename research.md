@@ -1,6 +1,6 @@
 ---
 title: Research Interests
-feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
+feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 ---
 
 This part is under constant updates. I'm more a fan of visual than of words. Please check [these slides](/files/EncisoAlva_240226.pdf?raw=true) about my research, they were planned for a 3 minutes presentation.
