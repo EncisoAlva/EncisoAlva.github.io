@@ -1,7 +1,7 @@
 ---
 title: "Good morning/evening y'all !!"
 feature_text: |
-  # Julio C. Enciso-Alva
+  # <span style="color:white;">Julio C. Enciso-Alva > </span>
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 excerpt: "Applied Math + Data Science"
 ---
@@ -24,11 +24,11 @@ You can also check my [Resume](/files/EncisoAlva_resume.pdf?raw=true).
 
 For contact use `juliocesar.encisoalva@mavs.uta.edu` or [LinkedIn](https://www.linkedin.com/in/julio-enciso-alva/).
 
-$~$
+&nbsp;
 
 If you found this page while looking for music, you likely were looking for my brother: the famous composer and violist [Erick Ricardo Enciso-Alva](https://linktr.ee/erealva).
 
-$~$
-$~$
+&nbsp;
+&nbsp;
 
 **Disclaimer:** Opinions stated or implied in this website are a responsability of the author, and they may not be representative of my employers, funders, or organizations that I am part of.
