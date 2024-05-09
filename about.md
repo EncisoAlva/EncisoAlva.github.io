@@ -1,6 +1,6 @@
 ---
 title: About me
-feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
+feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 ---
 
 Born in Pachuca de Soto, Hidalgo, Mexico. My name I refuse to abbreviate: Enciso from my father and Alva from my mother, as it was the custom where I was born. 

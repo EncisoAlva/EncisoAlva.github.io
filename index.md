@@ -2,18 +2,20 @@
 title: "Good morning/evening y'all !!"
 feature_text: |
   # Julio C. Enciso-Alva
-feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_TB.jpg?raw=true"
+feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 excerpt: "Applied Math + Data Science"
 ---
 
-![Profile Picture](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/profile1.jpg?raw=true){:style="float: right; width: 175px; height:233px"}
+![Profile Picture](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/profile2.jpg?raw=true){:style="float: right; width: 175px; height:233px"}
 
 
 
 Currently, I am a PhD candidate Applied Mathematician at the University o Texas at Arlington.
 
-My main research is about Inverse Problems and Mathematical Data Science via Convex Optimization, with applications to Computational Neuroscience and Imaging. 
-For  more details go to the [Research tab](research.md); for _less_ details, I make math formulas for better and cheaper imaging methods and I also do funky statistics.
+My main research is Inverse Problems and Mathematical Data Science via Convex Optimization, with applications to Computational Neuroscience and Imaging. 
+For  more details go to the [Research tab](research.md).
+
+On a few words, I make methods for better and cheaper imaging, and I also do funky statistics.
 
 **I’m on the 2024 academic job market.**
 
@@ -22,6 +24,11 @@ You can also check my [Resume](/files/EncisoAlva_resume.pdf?raw=true).
 
 For contact use `juliocesar.encisoalva@mavs.uta.edu` or [LinkedIn](https://www.linkedin.com/in/julio-enciso-alva/).
 
-If you are confused by the lack of music, then you were looking for my brother: the famous composer and violist [Erick Ricardo Enciso-Alva](https://linktr.ee/erealva).
+$~$
 
-**Disclaimer:** Opinions stated or implied in this website are a responsability of the author, and they may not be representative of my employers, funders, or organizations that I am part of. Once that is said, Free Palestine!
+If you found this page while looking for music, you likely were looking for my brother: the famous composer and violist [Erick Ricardo Enciso-Alva](https://linktr.ee/erealva).
+
+$~$
+$~$
+
+**Disclaimer:** Opinions stated or implied in this website are a responsability of the author, and they may not be representative of my employers, funders, or organizations that I am part of.
