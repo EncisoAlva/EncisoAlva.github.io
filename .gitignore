@@ -1,2 +1,6 @@
 .jekyll-cache/
+.jekyll-metadata
 _site/
+alembic-jekyll-theme-*.gem
+Gemfile.lock
+**/Gemfile.lock
