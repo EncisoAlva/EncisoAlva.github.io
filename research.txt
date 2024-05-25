@@ -1,7 +1,0 @@
----
-title: Research Interests
-feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
----
-
-Electrical Source Imaging (ESI) is a technique used to identify neural sources of electrical activity inside the brain, which may be related to normal or pathological states, given recordings of surface electric potentials like [EEG](https://en.wikipedia.org/wiki/Electroencephalography). 
-Applications of ESI include Neuropsychology and non-invasive monitoring of Epileptogenesis, among others.
