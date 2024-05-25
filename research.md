@@ -7,11 +7,15 @@ This part is under constant updates. I'm more a fan of visual than of words. Ple
 
 ...
 
-$\require{color}$
+$\require{xcolor}$
 
 On general terms, my current research is based on finding solutions to matrix equations similar to the following,
-$$ \mathbf{G}\, \mathbf{S} = \mathbf{Y} $$
-where $\mathbf{G}$ is a $m\times n$ matrix with $m \ll n$. 
+
+$$ \mathbf{G}\, {\color{red} \mathbf{S}} = \mathbf{Y} $$
+
+where $\mathbf{G}$ is a $m\times n$ matrix with $m \ll n$; take for example $m\approx 100$ and $n\approx 2,000$. This equation clearly don't have an unique solution.
+
+
 
 ...
 
