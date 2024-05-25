@@ -7,9 +7,11 @@ This part is under constant updates. I'm more a fan of visual than of words. Ple
 
 ...
 
-On a grand scale, my research is dedicated to solving equations in the form of
-$$ \mathbf{A} X = Y $$
-where $\mathbf{A}$ is a $m\times n$ matrix. 
+$\require{color}$
+
+On general terms, my current research is based on finding solutions to matrix equations similar to the following,
+$$ \mathbf{G}\, \mathbf{S} = \mathbf{Y} $$
+where $\mathbf{G}$ is a $m\times n$ matrix with $m \ll n$. 
 
 ...
 

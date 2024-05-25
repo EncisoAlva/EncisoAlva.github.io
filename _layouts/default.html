@@ -44,15 +44,26 @@
 
     {% include site-before-start.html %}
 
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
   <script>
     MathJax = {
       tex: {
-        inlineMath: [['$', '$']]
+        inlineMath:  [ ['$',  '$'],  ['\\(', '\\)'] ],
+        displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
+        processEscapes: true,      // use \$ to produce a literal dollar sign
+        digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
+                                   // pattern for recognizing numbers
+        tags: 'none',              // or 'none' or 'ams' or 'all'
+        formatError:               // function called when TeX syntax errors occur
+            (jax, err) => jax.formatError(err)
+      },
+      svg: {
+        fontCache: 'global'
       }
     };
+  </script>
+
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 
 
