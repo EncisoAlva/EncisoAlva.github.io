@@ -11,7 +11,9 @@ Electrical Source Imaging (ESI) is a technique used to identify neural sources o
 Applications of ESI include Neuropsychology and non-invasive monitoring of Epileptogenesis, among others.
 
 The mathematical formulation of this task includes solving the system 
+
 $$ \mathbf{G}\, {\color{red} \mathbf{S}} + \varepsilon = \mathbf{Y} $$
+
 for ${\color{red} \mathbf{S}}$, given $\mathbf{Y}$ and $\mathbf{G}$ an $m\times n$ matrix with $m\ll n$. 
 
 ![Inverse problem of Electric Source Imaging, simplified.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/InverseProblemESI.png?raw=true)
