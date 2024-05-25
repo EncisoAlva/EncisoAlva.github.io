@@ -7,14 +7,19 @@ This part is under constant updates. I'm more a fan of visual than of words. Ple
 
 ...
 
-$\require{\xcolor}$
-
 On general terms, my current research is based on finding solutions to matrix equations similar to the following,
 
 $$ \mathbf{G}\, {\color{red} \mathbf{S}} = \mathbf{Y} $$
 
-where $\mathbf{G}$ is a $m\times n$ matrix with $m \ll n$; take for example $m\approx 100$ and $n\approx 2,000$. This equation clearly don't have an unique solution.
+where $\mathbf{G}$ is a $m\times n$ matrix with $m \ll n$; take for example $m\approx 100$ and $n\approx 2,000$. This equation clearly don't have an unique solution for ${\color{red} \mathbf{S}}$... unless we get more information from the context.
 
+Equation (1) arises in numerous scenarios. One of those is Electrical Source Imaging (ESI): the electrical potential fields on the scalp, measured using [EEG](https://en.wikipedia.org/wiki/Electroencephalography)), is originated the superimposed poststinaptic potentials from all the neurons inside the brain.
+The ESI model all those neuron potentials as a scalar potential field, which is approximated by a finite number of dipoles with known location.
+
+For a quick summary, ESI approximates the neural electric activity using some dipoles; larger magnitude means more measurable electric activity.
+
+
+If it is assumed that the dipoles’ position is known and fixed, then the relation between the unknown dipoles’ magnitude (J) and the EEG recordings (Y) is linear as in equation (1). The mixing operator G is constructed by solving –numerically– a Laplace partial differential equation for each dipole, with the geometric domain of the subject’s head. Further details are not included in this document; they can be consulted elsewhere –for instance, in the review from Hallez [3]. 
 
 
 ...

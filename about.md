@@ -11,7 +11,7 @@ second family name comes from the mother (Maria Guadalupe Alva-Gonzalez).
 
 I also have a brother, Erick Ricardo Enciso-Alva. Here is a family picture of us :)
 
-![Family of Prof Enciso-Alva at a holiday in December.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/family.jpg?raw=true)
+![Family of Prof Enciso-Alva during a holiday.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/family.jpg?raw=true)
 
 Despite working with super funky math objects, I am human just like everybody else. Outside of work I often listen to music, play board games, read and write, cook, and collect curious trinkets.
 Fun findings from my hobbies:
