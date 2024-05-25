@@ -126,8 +126,8 @@ navigation_header:
   url: /about/
 - title: Research
   url: /research/
-- title: Blog
-  url: /blog/
+#- title: Blog
+#  url: /blog/
 - title: CV
   url: https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main//files/EncisoAlva_CV.pdf?raw=true
 
