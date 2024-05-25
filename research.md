@@ -7,7 +7,7 @@ This part is under constant updates. I'm more a fan of visual than of words. Ple
 
 ...
 
-$\require{xcolor}$
+$\require{\xcolor}$
 
 On general terms, my current research is based on finding solutions to matrix equations similar to the following,
 
