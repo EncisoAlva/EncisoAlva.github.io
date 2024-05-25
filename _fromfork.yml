@@ -35,18 +35,19 @@ plugins:
 - jemoji
 
 # 3. Gem settings
-paginate: 5 # jekyll-paginate > items per page
+paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
-  username: DrWholio # jekyll-seo-tag > Owners twitter username
-author: DrWholio # jekyll-seo-tag > default author
+  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
+author: DavidDarnes # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
-  name: Julio Cesar Enciso-Alva # jekyll-seo-tag > real name
+  name: David Darnes # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://x.com/DrWholio
-    - https://www.linkedin.com/in/julio-enciso-alva/
-    - https://github.com/EncisoAlva
+    - https://twitter.com/DavidDarnes
+    - https://www.facebook.com/daviddarnes
+    - https://www.linkedin.com/in/daviddarnes
+    - https://github.com/daviddarnes
 # markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
 # commonmark:
   # options: ["SMART", "FOOTNOTES"]
@@ -57,16 +58,17 @@ sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: America/Dallas # Timezone for blog posts and alike
+timezone: Europe/London # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
   posts:
     title: Posts # Needed for Siteleaf
     output: true
-    description: "A bit of a blog, a bit of usefl links" # The post list page content
-    feature_text: ''
-    feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
+    description: "My thoughts and ideas" # The post list page content
+    feature_text: |
+      Welcome to the blog
+    feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
 defaults:
@@ -90,15 +92,14 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: en-US # Set the site language
-title: "JC Enciso-Alva" # Site name or title, also used in jekyll-seo-tag
-logo: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/pic.jpg?raw=true" # Site logo, also used in jekyll-seo-tag
-description: 'Personal website for academic purposes.' # Site description and default description, also used in jekyll-seo-tag
-permalink: pretty
-# url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
-# baseurl: ""
-repo: "https://github.com/EncisoAlva/EncisoAlva.github.io"
-email: "juliocesar.encisoalva@mavs.uta.edu"
+lang: en-GB # Set the site language
+title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
+url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+baseurl: ""
+repo: "https://github.com/daviddarnes/alembic"
+email: "me@daviddarnes.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
@@ -109,40 +110,44 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: '/assets/logos/RBL@16px.png'
-  32: '/assets/logos/RBL@32px.png'
-  96: '/assets/logos/RBL@96px.png'
-  120: '/assets/logos/RBL@120px.png'
-  144: '/assets/logos/RBL@144px.png'
-  180: '/assets/logos/RBL@180px.png'
-  512: '/assets/logos/RBL@512px.png'
-  1024: '/assets/logos/RBL@1024px.png'
+  16: '/assets/logos/logo@16px.png'
+  32: '/assets/logos/logo@32px.png'
+  96: '/assets/logos/logo@96px.png'
+  120: '/assets/logos/logo@120px.png'
+  144: '/assets/logos/logo@144px.png'
+  180: '/assets/logos/logo@180px.png'
+  512: '/assets/logos/logo@512px.png'
+  1024: '/assets/logos/logo@1024px.png'
 
 # 9. Site navigation
 navigation_header:
 - title: Home
   url: /
-- title: About me
-  url: /about/
-- title: Research
-  url: /research/
+- title: Elements
+  url: /elements/
 - title: Blog
   url: /blog/
-- title: CV
-  url: https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main//files/EncisoAlva_resume.pdf?raw=true
+- title: Categories
+  url: /categories/
+- title: Search
+  url: /search/
+- title: Fork Alembic
+  url: https://github.com/daviddarnes/alembic
 
 navigation_footer:
-- title: Template by David Darnes
+- title: Created by David Darnes
   url: https://darn.es
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  Twitter: https://x.com/DrWholio
-  LinkedIn: https://www.linkedin.com/in/julio-enciso-alva/
-  GitHub: https://github.com/EncisoAlva
+  Twitter: https://twitter.com/DavidDarnes
+  LinkedIn: https://www.linkedin.com/in/daviddarnes
+  GitHub: https://github.com/daviddarnes
+  link: https://darn.es
+  RSS: /feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Twitter: "#0d94e7"
-  LinkedIn: "#3B5998"
+  facebook: "#3B5998"
   Email: true
 
 # Load custom fonts from fonts.google.com etc
