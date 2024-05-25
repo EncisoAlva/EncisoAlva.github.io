@@ -1,0 +1,42 @@
+---
+title: Research Interests
+feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
+---
+
+This part is under constant updates. I'm more a fan of visual than of words. Please check [these slides](/files/EncisoAlva_240226.pdf?raw=true) about my research, they were planned for a 3 minutes presentation.
+
+...
+
+Electrical Source Imaging (ESI) is a technique used to identify neural sources of electrical activity inside the brain, which may be related to normal or pathological states, given recordings of surface electric potentials like [EEG](https://en.wikipedia.org/wiki/Electroencephalography)). 
+Applications of ESI include Neuropsychology and non-invasive monitoring of Epileptogenesis, among others.
+
+The mathematical formulation of this task includes solving the system 
+
+$$ \mathbf{G}\, {\color{red} \mathbf{S}} + \varepsilon = \mathbf{Y} $$
+
+for ${\color{red} \mathbf{S}}$, given $\mathbf{Y}$ and $\mathbf{G}$ an $m\times n$ matrix with $m\ll n$. 
+
+![Inverse problem of Electric Source Imaging, simplified.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/InverseProblemESI.png?raw=true)
+
+This equation clearly don't have an unique solution for ${\color{red} \mathbf{S}}$... unless we get more information from the context.
+* Minimal-norm models assume that ${\mathbf{S}}$ has a small norm. Some authors use $\ell_2$ or $\ell_1$ norm, even $\ell_{1,2}$ norm. Maybe the norm of the total variation of ${\mathbf{S}}$ over time or space.
+* Multi-modal models use information obtained from _other_ types of data: CT, fMRI, NIRS, PET, etc.
+
+An effective and fast solution of this problem requires using Convex Optimization, either smooth or non-smooth, as well as Numerical Methods.
+
+* Non-invasive monitoring of ictal activity in infants.
+  * Using ESI from EEG data, the activity from certain brain areas during ictal activity was explored. 
+  * Subjects were infants with Glut1 deficiency.
+* Evaluation of multi-modal ESI methods from EEG.
+  * ESI methods were modified to include information from fMRI to increase accuracy.
+* Validation of ESI methods from ECoG in animal models.
+  * ESI results were compared with measurements from electrodes inserted in the brain.
+* Retrospective monitoring of stroke in animal models.
+  * Using ESI, the degradation of brain electrical activity due to an induced stroke was explored.
+* Evaluation of Virtual Deep Electrodes from ESI data.
+  * ESI data was used to estimate the measurements from hypothetical electrodes inserted inside the brain, referred to as Virtual Electrodes.
+  * Virtual Electrodes were compared with recordings from electrodes inserted in the brain.
+* Novel ESI methods from Dura Imaging and Neural Networks.
+  * Dura Imaging (DI) estimates the electric potential through the dura before reaching the scalp electrodes. 
+  * DI was used as intermediary for ESI with the aid of artificial neural networks.
+
