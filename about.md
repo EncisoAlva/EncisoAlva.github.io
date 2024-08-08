@@ -24,13 +24,6 @@ Fun findings from my hobbies:
 * There is an 'Oscar' for board games. It is called [Spiel des Jahres](https://www.spiel-des-jahres.de/en/games/) (Game of the Year). If we played a game before, it is very likely one of nominees.
 * Mexican rice is theorized to be a variation of Jollof rice. Cooking  mexican rice properly is considered a requisite for staring a household in some rural areas.
 
-By the way, if you are courius about the tiny blue/red symbol used as icon, it is from a DC comics cartoon.
-To be more specific it is from Young Justice 4th season; any further details are clearly spoilers.
-
-_Some context on the power rings._ While Green Lanterns Corps gather power from willpower, other emotions are also actively used for the same purpose. 
-Blue rings use hope, red rings use rage, yellow rings use fear, orange rings use greed, etc.
-I like to think of the blue/red combination as **perserverance**, and it is a nice goal.
-
 
 
 **PD:** I don't hate students, even if they aren't doing fine in my classes. Although I may be not very expressive, I am proud of y'alls effort.
