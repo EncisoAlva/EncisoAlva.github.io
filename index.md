@@ -10,14 +10,12 @@ excerpt: "Applied Math + Data Science"
 
 
 
-I have a recent PhD in applied mathematics from the University of Texas at Arlington.
-
-My main research is Inverse Problems and Mathematical Data Science via Convex Optimization, with applications to Computational Neuroscience and Imaging. 
+My main research is in Inverse Problems and Mathematical Data Science via Convex Optimization, with applications to Computational Neuroscience and Imaging. 
 For more details, visit the [Research tab](https://encisoalva.github.io/research/).
 
-In a few words, I develop methods for better and cheaper imaging and create funky statistics.
+In a few words, I develop methods for better and cheaper imaging. I also use somewhat fancy statistics.
 
-**I’m in the 2025 academic job market.**
+**I’m in the 2025-2026 job market.**
 
 For a look at my work, please visit either my [GitHub](https://github.com/EncisoAlva), my [ORCID](https://orcid.org/0000-0002-8315-6849) page, or my [Google Sholar](https://scholar.google.com/citations?hl=en&user=qqw6kegAAAAJ) page.
 You can also check my [Resume](/files/EncisoAlva_resume.pdf?raw=true).
@@ -31,4 +29,4 @@ If you found this page while looking for music, you likely were looking for the 
 &nbsp;
 &nbsp;
 
-**Disclaimer:** Opinions stated or implied in this website are the author's responsibility, and they may not represent my employers, funders, or organizations I am part of.
+**Disclaimer:** Opinions stated or implied in this website are the author's responsibility and may not represent my employers, funders, or organizations I am part of.
