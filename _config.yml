@@ -44,7 +44,6 @@ author: DrWholio # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: Julio Cesar Enciso-Alva # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://x.com/DrWholio
     - https://www.linkedin.com/in/julio-enciso-alva/
     - https://github.com/EncisoAlva
 # markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
@@ -64,7 +63,7 @@ collections:
   posts:
     title: Posts # Needed for Siteleaf
     output: true
-    description: "A bit of a blog, a bit of usefl links" # The post list page content
+    description: "A bit of a blog, a bit of useful links" # The post list page content
     feature_text: ''
     feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 
@@ -104,7 +103,7 @@ email: "juliocesar.encisoalva@mavs.uta.edu"
 # google_analytics: ""
 # google_analytics_anonymize_ip: ""
 # service_worker: false # Will turn off the service worker if set to false
-# short_name: "Al" # The web application short name, defaults to the site title
+# short_name: "EncisoAlva" # The web application short name, defaults to the site title
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 # 8. Site favicons & manifest icons
