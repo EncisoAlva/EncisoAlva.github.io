@@ -29,4 +29,4 @@ If you found this page while looking for music, you likely were looking for the 
 &nbsp;
 &nbsp;
 
-**Disclaimer:** Opinions stated or implied in this website are the author's responsibility and may not represent my employers, funders, or organizations I am part of.
+**Disclaimer:** Opinions stated or implied in this website are the author's responsibility and may not represent my employers, funders, or organizations I am part of. 
