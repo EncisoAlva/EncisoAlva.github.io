@@ -91,7 +91,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
 title: "JC Enciso-Alva" # Site name or title, also used in jekyll-seo-tag
-logo: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/pic.jpg?raw=true" # Site logo, also used in jekyll-seo-tag
+logo: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/pic2.jpg?raw=true" # Site logo, also used in jekyll-seo-tag
 description: 'Personal website for academic purposes.' # Site description and default description, also used in jekyll-seo-tag
 permalink: pretty
 # url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
