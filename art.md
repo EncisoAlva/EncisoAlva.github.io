@@ -83,18 +83,27 @@ $$ \begin{aligned}
 u(\theta) &= R_\mathcal{W} \theta - \sin (\theta) \\v(\theta) &= R_\mathcal{W} - \cos (\theta) 
 \end{aligned}$$
 
-Then the coordinates after mapping will be given by
+Altougth it is tempting to map $\theta$ into $B(t)$, we shall consider that $B(t)$ does not necessarily goes over it's trace at constant speed. In other words, we can measure the traversed path of $B(t)$ from $0$ to $t$ as follows
+
+$$
+A(t) = \int_0^t \sqrt{ \left( \frac{d}{ds} B_x(s) \right)^2 + \left( \frac{d}{ds} B_y(s) \right)^2 } ds
+$$
+where $B_x(t)$ and $B_y(t)$ are the $x,y$ coordinates of $B(t)$, respectively. 
+
+The function $A(t)$ is not necessarily linear, yet it needs to be accounted for when mapping $\theta$ into $B(t)$.
+The most simple way to write the coordineates after mapping will be given by
 $$ [x,y]^T = 
-B(u(\theta)/P_\mathcal{B}) + v(\theta) T(u(\theta)/P_\mathcal{B})
+B\left( u\left(A^{-1}\left(\theta\right)\right)\right) + v\left(A^{-1}\left(\theta\right)\right) T\left( u\left(A^{-1}\left(\theta\right)\right)\right)
 $$
 
-Where $P_\mathcal{B}$, the perimeter of the curve, is given by
+In general, the function $A$ may not have a simple closed-form; however, it can be approximated with relative ease. 
+Similarly, $A^{-1}$ will be troublesome to write analytically. 
 
-$$
-\int_0^1 \sqrt{ \left( \frac{d}{dt} B_x(t) \right)^2 + \left( \frac{d}{dt} B_y(t) \right)^2 } dt
-$$
-
-where $B_x(t)$ and $B_y(t)$ are the $x,y$ coordinates of $B(t)$, respectively. Notice that, in general, $P_\mathcal{B}$ is difficult to evaluate analytically but easy to approximate numerically.
+The use of $A^{-1}$ can be avoided by using the following strategy:
+1. Generate a collection of values $t \in [0,1]$.
+2. Compute $\theta(t) = A(t)$.
+3. Compute $u(t)= R_\mathcal{W} \theta(t) - \sin (\theta(t))$, $v(t) = R_\mathcal{W} - \cos (\theta(t))$.
+4. Compute $[x(t), y(t)]^T = B\left( u\left(t\right)\right) + v\left(t\right) T\left( u\left(t\right)\right)$.
 
 (Fig final)
 
