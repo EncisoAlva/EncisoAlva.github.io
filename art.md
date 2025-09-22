@@ -1,10 +1,10 @@
 ---
-title: Cycloids and B'ezier curves
+title: Cycloids and Bézier curves
 feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 ---
 
-As a hobby, I have been making figures that can be described as [cycloids](https://en.wikipedia.org/wiki/Cycloid) over [B'ezier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) or as [spirograph curves](https://en.wikipedia.org/wiki/Spirograph) over B'ezier curves.
-A great collection of those figures can be found on my Instagram page, [B'ezierSpirographsEveryDay](https://www.instagram.com/B'ezierspirographseveryday?igsh=MWR2NXBtcGdhNWxyNg==).
+As a hobby, I have been making figures that can be described as [cycloids](https://en.wikipedia.org/wiki/Cycloid) over [Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) or as [spirograph curves](https://en.wikipedia.org/wiki/Spirograph) over Bézier curves.
+A great collection of those figures can be found on my Instagram page, [BézierSpirographsEveryDay](https://www.instagram.com/Bézierspirographseveryday?igsh=MWR2NXBtcGdhNWxyNg==).
 
 ![Spirograph over the letter J.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/doubledouble250921_21.png?raw=true)
 
@@ -55,9 +55,9 @@ Now it is a good time to mention curtate cycloids, which occur when $R_\mathcal{
 
 The terms curtate and prolate can also be applied to hypercycloids.
 
-# What are B'ezier curves?
+# What are Bézier curves?
 
-B'ezier curves are parametric curves. Their general definition can be found elsewhere, like in their [Wikipedia page](https://en.wikipedia.org/wiki/B%C3%A9zier_curve). I want to emphasize the case of cubic B'ezier curves in the plane. Given the points $P_0, P_1, P_2, P_3$ and a parameter $t \in [0,1]$, the cubic B'ezier curve is the collection of points $B(t)$ given by
+Bézier curves are parametric curves. Their general definition can be found elsewhere, like in their [Wikipedia page](https://en.wikipedia.org/wiki/B%C3%A9zier_curve). I want to emphasize the case of cubic Bézier curves in the plane. Given the points $P_0, P_1, P_2, P_3$ and a parameter $t \in [0,1]$, the cubic Bézier curve is the collection of points $B(t)$ given by
 
 $$
 B(t) = (1-t)^3 P_0 + 3(1-t)^2t P_1 + 3(1-t) t^2 P_2 + t^3 P_3
@@ -65,11 +65,11 @@ $$
 
 (Fig?)
 
-Although many things can be said about B'ezier curves, I want to emphasize their role on graphic design. The concatenation of multiple cubic B'ezier curves, which is called a path, is versatile enough to be used for general-purpose vector graphics. Standard formats such as SVG and EPS use cubic B'ezier curves to encode complex general shapes.
+Although many things can be said about Bézier curves, I want to emphasize their role on graphic design. The concatenation of multiple cubic Bézier curves, which is called a path, is versatile enough to be used for general-purpose vector graphics. Standard formats such as SVG and EPS use cubic Bézier curves to encode complex general shapes.
 
-Cubic B'ezier curves are so common within the graphic design community. They are intuitive to generate and interpret, and have a simple formulation. Thus, they are a good way to encode general shapes and construct cycloids over them.
+Cubic Bézier curves are so common within the graphic design community. They are intuitive to generate and interpret, and have a simple formulation. Thus, they are a good way to encode general shapes and construct cycloids over them.
 
-# Cycloids over a B'ezier curve
+# Cycloids over a Bézier curve
 
 Maybe the most straightforward way to attack this task is by generating a local coordinate system near the curve. An unit tangent vector $T(t)$ can be computed with relative ease.
 
