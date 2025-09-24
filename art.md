@@ -162,6 +162,8 @@ Finally, it is important to acknowledge that this model only accounts for a sing
 
 One remarkable trend for modern spirograph designers is the use of *rings*, circular pieces with circular holes inside them. The marker point rolls at the inner circle of the ring, while the outer circle rolls over a larger circle-like shape. Furthermore, a second ring can be nested inside the first ring. 
 
+The use of these rings can be seen, for example, in [this video](https://www.youtube.com/watch?v=iajOVo6gFDU) from a manufacturer. The interested reader may also refer to [this tool](https://glagolj.github.io/gg-blog/tools/roulette_plot.html) to simulate the use of one single ring.
+
 Needless to say, the curves produced by nested rings are much more complex than cycloids. By adjusting the ratios between the perimeters of circles involved in this process properly, it is possible to produce a great variety of patterns. 
 
 This modeling strategy may work with nested rings by composing the mapping over the tangent/normal vectors at the contact points.
