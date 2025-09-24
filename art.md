@@ -53,7 +53,7 @@ $$
 The reason to introduce $R_\mathcal{M}$ is to allow cases when $R_\mathcal{M} \neq R_\mathcal{W}$.
 If $R_\mathcal{M} < R_\mathcal{W}$, the resulting curve is known as a **curtate cycloid**. If $R_\mathcal{M} > R_\mathcal{W}$, the resulting curve is known as a **prolate cycloid**.
 
-(Fig 7)
+![Curtate and prolate cycloids.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig07.png?raw=true)
 
 The term **trochoids** refers to all cycloids, curtate cycloids, and prolate cycloids. The adjectives 'prolate' and 'curtate' can be applied to epi- and hypercycloids by considering $R_\mathcal{M}$on a similar way.
 
@@ -67,7 +67,7 @@ $$
 \mathbf{B}(t) = (1-t)^3 \mathbf{P}_0 + 3(1-t)^2t \mathbf{P}_1 + 3(1-t) t^2 \mathbf{P}_2 + t^3 \mathbf{P}_3.
 $$
 
-(Fig 8)
+![Bezier curve and its control points.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig08.png?raw=true)
 
 For rolling a circle over a cubic Bézier curve, it is convenient to consider a unit normal vector, $\mathbf{N}$, at the contact point. 
 One way to construct such a vector is to construct a unit tangent vector, $\mathbf{T}$, and then rotate it.
@@ -85,7 +85,7 @@ Although it is challenging to obtain a closed-form expression for $\mathbf{T}(t)
 
 With $\mathbf{N}(t)$ at hand, we can, for example, find the center of a circle rolling over the curve based on the fact that the circle must be tangent to the curve at the contact point. 
 
-(Fig 9a)
+![Tangent and normal vectors to a Bezier curve, and a contact point with a circle.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig09b.png?raw=true)
 
 # A cycloid over a Bézier curve
 
@@ -105,7 +105,7 @@ $$
 
 where $\mathbf{B}_x$ and $\mathbf{B}_y$ are the $x$ and $y$ components of $\mathbf{B}$, respectively.
 
-(Fig 10)
+![Cumulative arc length over a Bezier curve with standard parametrization.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig10a.png?raw=true)
 
 Now, $t$ and $\theta$ should be parametrized in such a way that $A_\mathcal{C}(\theta) = A_\mathcal{B}(t)$.
 The most straightforward way to do so is by setting
@@ -128,7 +128,7 @@ $$
 \tilde{\mathbf{M}}(t) = \mathbf{B}(t) + \mathbf{M}_x(t) \mathbf{T}(t) + \mathbf{M}_y(t) \mathbf{N}(t).
 $$
 
-(Fig 10)
+![Cycloid over a Bezier curve.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig10.png?raw=true)
 
 Needless to say, this formulation will work for any trochoid over the Bezier curve. However, rolling a circle over a **path** (concatenation of Bezier curves) will require accounting for the cumulative traversed arc over the multiple curves. Also, it should account for non-smooth corners between adjacent curves from a path.
 
@@ -141,7 +141,7 @@ The construction of generalized epi- and hypercycloids over general curves bring
 
 When constructing generalized hypercycloids using a curve $\mathcal{B}$, a **return effect** is generated when the curvature of $\mathcal{B}$ is smaller than the curvature of $\mathcal{W}$. This behavior is not physically feasible. This condition represents the case when $\mathcal{W}$ *doesn't fit* in a section of $\mathcal{B}$. 
 
-(Fig 12)
+![Return effect, described on the text, is related to the curvature radius.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig12.png?raw=true)
 
 This situation can be identified using the **radius of curvature** of the Bezier curve, $\kappa$, which can be computed as
 
