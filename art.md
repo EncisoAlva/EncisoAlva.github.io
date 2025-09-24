@@ -146,7 +146,7 @@ When constructing generalized hypercycloids using a curve $\mathcal{B}$, a **ret
 
 This situation can be identified using the **radius of curvature** of the Bezier curve, $\kappa$, which can be computed as
 $$
-\kappa(t) = \frac{\left[ \left( \frac{d}{dt} \mathbf{B}_x(t) \right)^2 + \left( \frac{d}{dt} \mathbf{B}_y(t) \right)^2 \right]^{3/2}}{\left( \frac{d}{dt} \mathbf{B}_x(t) \right)\left( \frac{d^2}{dt^2} \mathbf{B}_y(t) \right) - \left( \frac{d}{dt} \mathbf{B}_y(t) \right) \left( \frac{d^2}{dt^2} \mathbf{B}_x(t) \right)^2}.
+\kappa(t) = \frac{\left[ \left( \frac{d}{dt} \mathbf{B}_x(t) \right)^2 + \left( \frac{d}{dt} \mathbf{B}_y(t) \right)^2 \right]^{3/2}}{\left( \frac{d}{dt} \mathbf{B}_x(t) \right)\left( \frac{d^2}{dt^2} \mathbf{B}_y(t) \right) - \left( \frac{d}{dt} \mathbf{B}_y(t) \right) \left( \frac{d^2}{dt^2} \mathbf{B}_x(t) \right)}.
 $$
 
 With this notation at hand, we notice that the *return* effect occurs whenever $\kappa < R_\mathcal{W}$. 
