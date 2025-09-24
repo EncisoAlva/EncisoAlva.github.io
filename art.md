@@ -6,7 +6,7 @@ feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img
 As a hobby, I have been making figures that can be described as [cycloids](https://en.wikipedia.org/wiki/Cycloid) over [Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) or as [spirograph curves](https://en.wikipedia.org/wiki/Spirograph) over Bézier curves.
 A great collection of those figures can be found on my Instagram page, [BézierSpirographsEveryDay](https://www.instagram.com/Bézierspirographseveryday?igsh=MWR2NXBtcGdhNWxyNg==).
 
-![Spirograph over the letter J.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/doubledouble250921_21.png?raw=true)
+![Spirograph over the letter J.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/myname.png?raw=true)
 
 Aside from being visually pleasing, there is beauty in how these figures generalize the concept of cycloids.
 
