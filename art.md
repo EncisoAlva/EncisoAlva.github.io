@@ -131,14 +131,17 @@ $$
 ![Cycloid over a Bezier curve.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig10.png?raw=true)
 
 Needless to say, this formulation will work for any trochoid over the Bezier curve. However, rolling a circle over a **path** (concatenation of Bezier curves) will require accounting for the cumulative traversed arc over the multiple curves. 
-The finer details are left as an exercise to the reader.
 
+Another factor that must be accounted for in a path is the corners, the connection between one Bézier curve and the next. For the animations in Instagram, this is done depending on the angle formed by the normal.
+The cycloids that are cut by a reflex angle are stitched together using a circular arc. 
+The acute and obtuse angles are simply replaced by circular arcs.
 
+![Replacements due to corners on a concatenation of Bezier curves.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig13.png?raw=true)
 
 
 # Discussion
 
-One strength of this small model for a rolling circle is that it does not depend intrinsically on using Bezier curves. In fact, the function $\mathbf{B}$ can be replaced with any other parametric curve that is once-differentiable and has finite length. The motivation to choose Bezier curves in particular comes from their versatility to create complex shapes with relative ease, which can be done with the aid of software.
+One strength of this small model for a rolling circle is that it does not depend intrinsically on using Bezier curves. In fact, the function $\mathbf{B}$ can be replaced with any other parametric curve that is once-differentiable and has finite length. The motivation to choose Bézier curves in particular comes from their versatility to create complex shapes with relative ease, which can be done with the aid of software.
 
 The construction of generalized epi- and hypercycloids over general curves brings implies a collection of physical constraints that are unnacounted for. If a physically feasible construction is desired, they can be identified and removed manually.
 
