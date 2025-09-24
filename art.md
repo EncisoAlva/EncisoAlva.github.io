@@ -53,7 +53,7 @@ $$
 The reason to introduce $R_\mathcal{M}$ is to allow cases when $R_\mathcal{M} \neq R_\mathcal{W}$.
 If $R_\mathcal{M} < R_\mathcal{W}$, the resulting curve is known as a **curtate cycloid**. If $R_\mathcal{M} > R_\mathcal{W}$, the resulting curve is known as a **prolate cycloid**.
 
-![Curtate and prolate cycloids.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig07.png?raw=true)
+![Curtate and prolate cycloids.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig07b.png?raw=true)
 
 The term **trochoids** refers to all cycloids, curtate cycloids, and prolate cycloids. The adjectives 'prolate' and 'curtate' can be applied to epi- and hypercycloids by considering $R_\mathcal{M}$on a similar way.
 
