@@ -145,6 +145,7 @@ When constructing generalized hypercycloids using a curve $\mathcal{B}$, a **ret
 (Fig 12)
 
 This situation can be identified using the **radius of curvature** of the Bezier curve, $\kappa$, which can be computed as
+
 $$
 \kappa(t) = \frac{\left[ \left( \frac{d}{dt} \mathbf{B}_x(t) \right)^2 + \left( \frac{d}{dt} \mathbf{B}_y(t) \right)^2 \right]^{3/2}}{\left( \frac{d}{dt} \mathbf{B}_x(t) \right)\left( \frac{d^2}{dt^2} \mathbf{B}_y(t) \right) - \left( \frac{d}{dt} \mathbf{B}_y(t) \right) \left( \frac{d^2}{dt^2} \mathbf{B}_x(t) \right)}.
 $$
@@ -152,6 +153,3 @@ $$
 With this notation at hand, we notice that the *return* effect occurs whenever $\kappa < R_\mathcal{W}$. 
 The case $\kappa < 0$ indicates that the radius of curvature is facing the opposite orientation, and so no *return* effect will be observed regardless of the value of $R_\mathcal{W}$. 
 
-# Future work
-
-Words more, words less. The algorithm can be easily generalized for other rolling shapes. Just change the parametrization for $(u,v)$. But general shapes will bring new sets of physical constraints that need to be incorporated into the model.
