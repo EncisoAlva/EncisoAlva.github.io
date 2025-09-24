@@ -70,7 +70,7 @@ $$
 (Fig 8)
 
 For rolling a circle over a cubic Bézier curve, it is convenient to consider a unit normal vector, $\mathbf{N}$, at the contact point. 
-One way to construct such a vector is to construct a unit tangent vector, $\mathbf{T}$, and then rotate it $\frac{\pi}{2}$ radians counterclockwise.
+One way to construct such a vector is to construct a unit tangent vector, $\mathbf{T}$, and then rotate it.
 
 For a particular value of $t$, the unit tangent vector $\mathbf{T}(t)$ and the unit normal vector $\mathbf{N}(t)$ are given by
 
@@ -78,7 +78,7 @@ $$
 \begin{align}
 \mathbf{T}(t) &= \frac{\frac{d}{dt}\mathbf{B}(t)}{\Vert \frac{d}{dt}\mathbf{B}(t) \Vert}, \\
 \frac{d}{dt}\mathbf{B}(t) &= 3(1-t)^2 \left( \mathbf{P}_1-\mathbf{P}_0 \right) + 6(1-t)t \left( \mathbf{P}_2-\mathbf{P}_1 \right) + 3t^2 \left( \mathbf{P}_3-\mathbf{P}_2 \right), \\
-$\mathbf{N}(t)$ &= \begin{bmatrix} 0 & 1 \\ -1 & 1 \end{bmatrix}.
+\mathbf{N}(t) &= \begin{bmatrix} 0 & 1 \\ -1 & 1 \end{bmatrix} \mathbf{T}(t).
 \end{align}
 $$
 
@@ -100,7 +100,7 @@ In order to keep the interpretation of *a circle running over a curve*, it is co
 $$
 \begin{align}
 A_\mathcal{C}(\theta) &= R_\mathcal{W} \theta \\
-A_\mathcal{B}(t) &= \int_0^t \sqrt{ \left( \frac{d}{ds} \mathbf{B}_x(s) \right)^2 + \left( \frac{d}{ds} \mathbf{B}_y(s) \right)^2 } ds .
+A_\mathcal{B}(t) &= \bigint_0^t \sqrt{ \left( \frac{d}{ds} \mathbf{B}_x(s) \right)^2 + \left( \frac{d}{ds} \mathbf{B}_y(s) \right)^2 } ds .
 \end{align}
 $$
 
@@ -110,6 +110,7 @@ where $\mathbf{B}_x$ and $\mathbf{B}_y$ are the $x$ and $y$ components of $\math
 
 Now, $t$ and $\theta$ should be parametrized in such a way that $A_\mathcal{C}(\theta) = A_\mathcal{B}(t)$.
 The most straightforward way to do so is by setting
+
 $$
 \theta(t) = \frac{1}{R_\mathcal{W}} A_\mathcal{B}(t).
 $$
