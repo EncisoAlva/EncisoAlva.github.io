@@ -45,8 +45,7 @@ Although we shall use instead the ratio between perimeters $k = P_\mathcal{W}/P_
 Maybe the simplest way to parametrize a cycloid is in terms of $\theta$, the angular displacement of $\mathcal{W}$. Recall that $\mathcal{W}$ has center $O_\mathcal{W}$ and radius $\mathcal{W}$ is $R_\mathcal{M}$, and let $R_\mathcal{M}$ be the distance from $\mathbf{M}$ to $O_\mathcal{W}$.
 
 $$
-\mathbf{M}(\theta) = 
-\begin{bmatrix} u(\theta) \\ v(\theta) \end{bmatrix}
+\mathbf{M}(\theta)
 =
 \begin{bmatrix} R_\mathcal{W} \theta - R_\mathcal{M}\sin (\theta) \\ R_\mathcal{W} - R_\mathcal{M} \cos (\theta) \end{bmatrix}
 $$
@@ -58,59 +57,84 @@ If $R_\mathcal{M} < R_\mathcal{W}$, the resulting curve is known as a **curtate 
 
 The term **trochoids** refers to all cycloids, curtate cycloids, and prolate cycloids. The adjectives 'prolate' and 'curtate' can be applied to epi- and hypercycloids by considering $R_\mathcal{M}$on a similar way.
 
-# Bézier curves and their tangent vector
+# Bézier curves and their tangent/normal vectors
 
-Bézier curves are parametric curves. Their general definition can be found elsewhere, like in their [Wikipedia page](https://en.wikipedia.org/wiki/B%C3%A9zier_curve). I want to emphasize the case of cubic Bézier curves in the plane. Given the points $\mathbf{P}_0, \mathbf{P}_1, \mathbf{P}_2, \mathbf{P}_3$ and a parameter $t \in [0,1]$, the cubic Bézier curve is the collection of points $\mathbf{P}(t)$ given by
+Many things can be said about Bézier curves; for instance, look at their [Wikipedia page](https://en.wikipedia.org/wiki/B%C3%A9zier_curve). I would like to emphasize their role in graphic design. The concatenation of multiple Bézier curves, referred to as a **path**, is a standard way of producing and encoding general-purpose curves in vector graphics. Most graphic design software allows users to create, visualize, and modify these curves with relative ease. Yet, their formulation is simple enough to be used in this model.
 
-$$
-\mathbf{B}(t) = (1-t)^3 \mathbf{P}_0 + 3(1-t)^2t \mathbf{P}_1 + 3(1-t) t^2 \mathbf{P}_2 + t^3 \mathbf{P}_3
-$$
-
-(Fig?)
-
-Although many things can be said about Bézier curves, I want to emphasize their role on graphic design. The concatenation of multiple cubic Bézier curves, which is called a path, is versatile enough to be used for general-purpose vector graphics. Standard formats such as SVG and EPS use cubic Bézier curves to encode complex general shapes.
-
-Cubic Bézier curves are so common within the graphic design community. They are intuitive to generate and interpret, and have a simple formulation. Thus, they are a good way to encode general shapes and construct cycloids over them.
-
-# Cycloids over a Bézier curve
-
-Maybe the most straightforward way to attack this task is by generating a local coordinate system near the curve. An unit tangent vector $T(t)$ can be computed with relative ease.
+Given $t\in [0,1]$ and the *control points* $\mathbf{P}_0, \mathbf{P}_1, \mathbf{P}_2, \mathbf{P}_3$, a **cubic Bézier curve** is the collection of $\mathbf{B}(t)$ defined as
 
 $$
-\mathbf{T}(t) = rotate \frac{\frac{d}{dt}\mathbf{B}(t)}{\Vert \frac{d}{dt}\mathbf{B}(t) \Vert}
+\mathbf{B}(t) = (1-t)^3 \mathbf{P}_0 + 3(1-t)^2t \mathbf{P}_1 + 3(1-t) t^2 \mathbf{P}_2 + t^3 \mathbf{P}_3.
 $$
 
-Notice that an analytic expression of $T(t)$ is quite challenging, yet it is easy to compute for any given $t$. If the curve is smooth enough, which is often the case, then $(B(t),T(t))$ is good enough to construct a map from the plane. 
+(Fig 8)
 
-Recall that the coordinates of the cycloid, parameterized by $\theta$, are given by
+For rolling a circle over a cubic Bézier curve, it is convenient to consider a unit normal vector, $\mathbf{N}$, at the contact point. 
+One way to construct such a vector is to construct a unit tangent vector, $\mathbf{T}$, and then rotate it $\frac{\pi}{2}$ radians counterclockwise.
 
-$$ \begin{aligned}
-u(\theta) &= R_\mathcal{W} \theta - \sin (\theta) \\v(\theta) &= R_\mathcal{W} - \cos (\theta) 
-\end{aligned}$$
-
-Although it is tempting to map $\theta$ into $B(t)$, we shall consider that $B(t)$ does not necessarily go over its trace at constant speed. In other words, we can measure the traversed path of $B(t)$ from $0$ to $t$ as follows
+For a particular value of $t$, the unit tangent vector $\mathbf{T}(t)$ and the unit normal vector $\mathbf{N}(t)$ are given by
 
 $$
-A(t) = \int_0^t \sqrt{ \left( \frac{d}{ds} B_x(s) \right)^2 + \left( \frac{d}{ds} B_y(s) \right)^2 } ds
-$$
-where $B_x(t)$ and $B_y(t)$ are the $x,y$ coordinates of $B(t)$, respectively. 
-
-The function $A(t)$ is not necessarily linear, yet it needs to be accounted for when mapping $\theta$ into $B(t)$.
-The simplest way to write the coordinates after mapping will be given by
-$$ [x,y]^T = 
-B\left( u\left(A^{-1}\left(\theta\right)\right)\right) + v\left(A^{-1}\left(\theta\right)\right) T\left( u\left(A^{-1}\left(\theta\right)\right)\right)
+\begin{align}
+\mathbf{T}(t) &= \frac{\frac{d}{dt}\mathbf{B}(t)}{\Vert \frac{d}{dt}\mathbf{B}(t) \Vert}, \\
+\frac{d}{dt}\mathbf{B}(t) &= 3(1-t)^2 \left( \mathbf{P}_1-\mathbf{P}_0 \right) + 6(1-t)t \left( \mathbf{P}_2-\mathbf{P}_1 \right) + 3t^2 \left( \mathbf{P}_3-\mathbf{P}_2 \right), \\
+$\mathbf{N}(t)$ &= \begin{bmatrix} 0 & 1 \\ -1 & 1 \end{bmatrix}.
+\end{align}
 $$
 
-In general, the function $A$ may not have a simple closed-form; however, it can be approximated with relative ease. 
-Similarly, $A^{-1}$ will be troublesome to write analytically. 
+Although it is challenging to obtain a closed-form expression for $\mathbf{T}(t)$ and $\mathbf{N}(t)$, they can be computed easily for any value of $t$. 
 
-The use of $A^{-1}$ can be avoided by using the following strategy:
-1. Generate a collection of values $t \in [0,1]$.
-2. Compute $\theta(t) = A(t)$.
-3. Compute $u(t)= R_\mathcal{W} \theta(t) - \sin (\theta(t))$, $v(t) = R_\mathcal{W} - \cos (\theta(t))$.
-4. Compute $[x(t), y(t)]^T = B\left( u\left(t\right)\right) + v\left(t\right) T\left( u\left(t\right)\right)$.
+With $\mathbf{N}(t)$ at hand, we can, for example, find the center of a circle rolling over the curve based on the fact that the circle must be tangent to the curve at the contact point. 
 
-(Fig final)
+(Fig 9a)
+
+# A cycloid over a Bézier curve
+
+Consider a circle $\mathcal{W}$, with center $O_\mathcal{W}$ and radius $R_\mathcal{W}$, with a marker point $\mathbf{M}$ at distance $R_\mathcal{M}$ from $O_\mathcal{W}$.
+Consider that $\mathcal{W}$ is rolling over a Bezier curve $\mathcal{B}$ with *control points* $\mathbf{P}_0, \mathbf{P}_1, \mathbf{P}_2, \mathbf{P}_3$.
+
+Previously, it was shown how to parametrize a cycloid in terms of the angular displacement $\theta$. Also, it was shown how to parametrize the Bézier curve in terms of a parameter $t$. These parameters should be connected in such a way that the circle and the curve have a common contact point.
+
+In order to keep the interpretation of *a circle running over a curve*, it is convenient to consider the traversed arc. Let $A_\mathcal{W}$ and $A_\mathcal{B}$ the length of arc traversed due to the rolling over $\mathcal{W}$ and $\mathcal{W}$, respectively. They can be computed as follows,
+
+$$
+\begin{align}
+A_\mathcal{C}(\theta) &= R_\mathcal{W} \theta \\
+A_\mathcal{B}(t) &= \int_0^t \sqrt{ \left( \frac{d}{ds} \mathbf{B}_x(s) \right)^2 + \left( \frac{d}{ds} \mathbf{B}_y(s) \right)^2 } ds .
+\end{align}
+$$
+
+where $\mathbf{B}_x$ and $\mathbf{B}_y$ are the $x$ and $y$ components of $\mathbf{B}$, respectively.
+
+(Fig 10)
+
+Now, $t$ and $\theta$ should be parametrized in such a way that $A_\mathcal{C}(\theta) = A_\mathcal{B}(t)$.
+The most straightforward way to do so is by setting
+$$
+\theta(t) = \frac{1}{R_\mathcal{W}} A_\mathcal{B}(t).
+$$
+
+The position of the cycloid in terms of $t$ is determined by simple composition,
+
+$$
+\mathbf{M}(t) = 
+\begin{bmatrix} u\left(\theta\left( t \right)\right) \\ v(\theta) \end{bmatrix}
+=
+\begin{bmatrix} R_\mathcal{W} \theta(t) - R_\mathcal{M}\sin \left(\theta\left( t \right)\right) \\ R_\mathcal{W} - R_\mathcal{M} \cos \left(\theta\left( t \right)\right) \end{bmatrix}.
+$$
+
+Yet, the position of the cycloid **after** setting it on the curve, $\tilde{\mathbf{M}}$, can be determined using the tangent and normal vectors,
+
+$$
+\tilde{\mathbf{M}}(t) = \mathbf{B}(t) + \mathbf{M}_x(t) \mathbf{T}(t) + \mathbf{M}_y(t) \mathbf{N}(t).
+$$
+
+(Fig 10)
+
+Needless to say, this formulation will work for any trochoid over the Bezier curve. However, rolling a circle over a **path** (concatenation of Bezier curves) will require accounting for the cumulative traversed arc over the multiple curves. Also, it should account for non-smooth corners between adjacent curves from a path.
+
+The finer details are left as an exercise to the reader.
+
 
 # Discussion
 
@@ -118,8 +142,16 @@ The construction of generalized epi- and hypercycloids over general curves bring
 
 When constructing generalized hypercycloids using a curve $\mathcal{B}$, a **return effect** is generated when the curvature of $\mathcal{B}$ is smaller than the curvature of $\mathcal{W}$. This behavior is not physically feasible. This condition represents the case when $\mathcal{W}$ *doesn't fit* in a section of $\mathcal{B}$. 
 
-![Generalized hypercycloids with rational ratios.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig07.png?raw=true)
+(Fig 12)
+
+This situation can be identified using the **radius of curvature** of the Bezier curve, $\kappa$, which can be computed as
+$$
+\kappa(t) = \frac{\left[ \left( \frac{d}{dt} \mathbf{B}_x(t) \right)^2 + \left( \frac{d}{dt} \mathbf{B}_y(t) \right)^2 \right]^{3/2}}{\left( \frac{d}{dt} \mathbf{B}_x(t) \right)\left( \frac{d^2}{dt^2} \mathbf{B}_y(t) \right) - \left( \frac{d}{dt} \mathbf{B}_y(t) \right) \left( \frac{d^2}{dt^2} \mathbf{B}_x(t) \right)^2}.
+$$
+
+With this notation at hand, we notice that the *return* effect occurs whenever $\kappa < R_\mathcal{W}$. 
+The case $\kappa < 0$ indicates that the radius of curvature is facing the opposite orientation, and so no *return* effect will be observed regardless of the value of $R_\mathcal{W}$. 
 
 # Future work
 
-Words more, words less. The algorithm can be easily generalized for other rolling shapes. Just change the parametrization for $(u,v)$. But general shapes will bring new sets of physical constraints that need to be incorporated to the model.
+Words more, words less. The algorithm can be easily generalized for other rolling shapes. Just change the parametrization for $(u,v)$. But general shapes will bring new sets of physical constraints that need to be incorporated into the model.
