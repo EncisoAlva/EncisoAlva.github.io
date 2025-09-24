@@ -29,7 +29,7 @@ If the ratio $k = R_\mathcal{W}/R_\mathcal{C}$ is rational, then the number of c
 
 ![Epicycloids with rational ratios.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig04.png?raw=true)
 
-If the ratio $k = R_\mathcal{W}/R_\mathcal{C}$ is irrational, then the epicycloid should be dense in a circular donut; the center will be the same as $\mathcal{C}$, the inner radius $R_\mathcal{C}$, and the outer radius $R_\mathcal{C} + 2 R_\mathcal{W} = (1+2k) R_\mathcal{C}$. This case is not very visually pleasing.
+If the ratio $k = R_\mathcal{W}/R_\mathcal{C}$ is irrational, then the epicycloid should be dense in a circular donut; the center will be the same as $\mathcal{C}$, the inner radius $R_\mathcal{C}$, and the outer radius $R_\mathcal{C} + 2 R_\mathcal{W}$. This case is not very visually pleasing.
 
 *Spoiler:* All these observations about cusps are conserved if the circle $\mathcal{C}$ is replaced by $\mathcal{B}$, an arbitrary once-differentiable closed curve of finite length.
 Although we shall use instead the ratio between perimeters $k = P_\mathcal{W}/P_\mathcal{B}$.
@@ -94,11 +94,11 @@ Consider that $\mathcal{W}$ is rolling over a Bezier curve $\mathcal{B}$ with *c
 
 Previously, it was shown how to parametrize a cycloid in terms of the angular displacement $\theta$. Also, it was shown how to parametrize the Bézier curve in terms of a parameter $t$. These parameters should be connected in such a way that the circle and the curve have a common contact point.
 
-In order to keep the interpretation of *a circle running over a curve*, it is convenient to consider the traversed arc. Let $A_\mathcal{W}$ and $A_\mathcal{B}$ the length of arc traversed due to the rolling over $\mathcal{W}$ and $\mathcal{W}$, respectively. They can be computed as follows,
+In order to keep the interpretation of *a circle running over a curve*, it is convenient to consider the traversed arc. Let $A_\mathcal{W}$ and $A_\mathcal{B}$ the length of arc traversed by a point moving over $\mathcal{W}$ and $\mathcal{B}$, respectively. They can be computed as follows,
 
 $$
 \begin{align}
-A_\mathcal{C}(\theta) &= R_\mathcal{W} \theta \\
+A_\mathcal{W}(\theta) &= R_\mathcal{W} \theta \\
 A_\mathcal{B}(t) &= \int_0^t \sqrt{ \left( \frac{d}{ds} \mathbf{B}_x(s) \right)^2 + \left( \frac{d}{ds} \mathbf{B}_y(s) \right)^2 } ds .
 \end{align}
 $$
@@ -107,7 +107,7 @@ where $\mathbf{B}_x$ and $\mathbf{B}_y$ are the $x$ and $y$ components of $\math
 
 ![Cumulative arc length over a Bezier curve with standard parametrization.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig10a.png?raw=true)
 
-Now, $t$ and $\theta$ should be parametrized in such a way that $A_\mathcal{C}(\theta) = A_\mathcal{B}(t)$.
+Now, $t$ and $\theta$ should be parametrized in such a way that $A_\mathcal{W}(\theta) = A_\mathcal{B}(t)$.
 The most straightforward way to do so is by setting
 
 $$
@@ -130,12 +130,15 @@ $$
 
 ![Cycloid over a Bezier curve.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig10.png?raw=true)
 
-Needless to say, this formulation will work for any trochoid over the Bezier curve. However, rolling a circle over a **path** (concatenation of Bezier curves) will require accounting for the cumulative traversed arc over the multiple curves. Also, it should account for non-smooth corners between adjacent curves from a path.
-
+Needless to say, this formulation will work for any trochoid over the Bezier curve. However, rolling a circle over a **path** (concatenation of Bezier curves) will require accounting for the cumulative traversed arc over the multiple curves. 
 The finer details are left as an exercise to the reader.
 
 
+
+
 # Discussion
+
+One strength of this small model for a rolling circle is that it does not depend intrinsically on using Bezier curves. In fact, the function $\mathbf{B}$ can be replaced with any other parametric curve that is once-differentiable and has finite length. The motivation to choose Bezier curves in particular comes from their versatility to create complex shapes with relative ease, which can be done with the aid of software.
 
 The construction of generalized epi- and hypercycloids over general curves brings implies a collection of physical constraints that are unnacounted for. If a physically feasible construction is desired, they can be identified and removed manually.
 
@@ -152,3 +155,10 @@ $$
 With this notation at hand, we notice that the *return* effect occurs whenever $\kappa > R_\mathcal{W}$. 
 The case $\kappa < 0$ indicates that the radius of curvature is facing the opposite orientation, and so no return effect will be observed regardless of the value of $R_\mathcal{W}$. 
 
+Finally, it is important to acknowledge that this model only accounts for a single rotating circle. With some small changes, the rotating circle $\mathcal{W}$ can be replaced by some non-circle shape.
+
+One remarkable trend for modern spirograph designers is the use of *rings*, circular pieces with circular holes inside them. The marker point rolls at the inner circle of the ring, while the outer circle rolls over a larger circle-like shape. Furthermore, a second ring can be nested inside the first ring. 
+
+Needless to say, the curves produced by nested rings are much more complex than cycloids. By adjusting the ratios between the perimeters of circles involved in this process properly, it is possible to produce a great variety of patterns. 
+
+This modeling strategy may work with nested rings by composing the mapping over the tangent/normal vectors at the contact points.
