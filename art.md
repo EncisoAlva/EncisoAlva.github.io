@@ -77,8 +77,7 @@ For a particular value of $t$, the unit tangent vector $\mathbf{T}(t)$ and the u
 $$
 \begin{align}
 \mathbf{T}(t) &= \frac{\frac{d}{dt}\mathbf{B}(t)}{\Vert \frac{d}{dt}\mathbf{B}(t) \Vert}, \\
-\frac{d}{dt}\mathbf{B}(t) &= 3(1-t)^2 \left( \mathbf{P}_1-\mathbf{P}_0 \right) + 6(1-t)t \left( \mathbf{P}_2-\mathbf{P}_1 \right) + 3t^2 \left( \mathbf{P}_3-\mathbf{P}_2 \right), \\
-\mathbf{N}(t) &= \begin{bmatrix} 0 & 1 \\ -1 & 1 \end{bmatrix} \mathbf{T}(t).
+\mathbf{N}(t) &= \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix} \mathbf{T}(t).
 \end{align}
 $$
 
@@ -150,6 +149,6 @@ $$
 \kappa(t) = \frac{\left[ \left( \frac{d}{dt} \mathbf{B}_x(t) \right)^2 + \left( \frac{d}{dt} \mathbf{B}_y(t) \right)^2 \right]^{3/2}}{\left( \frac{d}{dt} \mathbf{B}_x(t) \right)\left( \frac{d^2}{dt^2} \mathbf{B}_y(t) \right) - \left( \frac{d}{dt} \mathbf{B}_y(t) \right) \left( \frac{d^2}{dt^2} \mathbf{B}_x(t) \right)}.
 $$
 
-With this notation at hand, we notice that the *return* effect occurs whenever $\kappa < R_\mathcal{W}$. 
-The case $\kappa < 0$ indicates that the radius of curvature is facing the opposite orientation, and so no *return* effect will be observed regardless of the value of $R_\mathcal{W}$. 
+With this notation at hand, we notice that the *return* effect occurs whenever $\kappa > R_\mathcal{W}$. 
+The case $\kappa < 0$ indicates that the radius of curvature is facing the opposite orientation, and so no return effect will be observed regardless of the value of $R_\mathcal{W}$. 
 
