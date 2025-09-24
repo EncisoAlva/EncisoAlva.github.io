@@ -100,7 +100,7 @@ In order to keep the interpretation of *a circle running over a curve*, it is co
 $$
 \begin{align}
 A_\mathcal{C}(\theta) &= R_\mathcal{W} \theta \\
-A_\mathcal{B}(t) &= \bigint_0^t \sqrt{ \left( \frac{d}{ds} \mathbf{B}_x(s) \right)^2 + \left( \frac{d}{ds} \mathbf{B}_y(s) \right)^2 } ds .
+A_\mathcal{B}(t) &= \int_0^t \sqrt{ \left( \frac{d}{ds} \mathbf{B}_x(s) \right)^2 + \left( \frac{d}{ds} \mathbf{B}_y(s) \right)^2 } ds .
 \end{align}
 $$
 
@@ -118,8 +118,7 @@ $$
 The position of the cycloid in terms of $t$ is determined by simple composition,
 
 $$
-\mathbf{M}(t) = 
-\begin{bmatrix} u\left(\theta\left( t \right)\right) \\ v(\theta) \end{bmatrix}
+\mathbf{M}(t) 
 =
 \begin{bmatrix} R_\mathcal{W} \theta(t) - R_\mathcal{M}\sin \left(\theta\left( t \right)\right) \\ R_\mathcal{W} - R_\mathcal{M} \cos \left(\theta\left( t \right)\right) \end{bmatrix}.
 $$
