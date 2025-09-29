@@ -4,7 +4,7 @@ feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img
 ---
 
 As a hobby, I have been making figures that can be described as [cycloids](https://en.wikipedia.org/wiki/Cycloid) over [Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) or as [spirograph curves](https://en.wikipedia.org/wiki/Spirograph) over Bézier curves.
-A great collection of those figures can be found on my Instagram page, [BézierSpirographsEveryDay](https://www.instagram.com/Bézierspirographseveryday?igsh=MWR2NXBtcGdhNWxyNg==).
+A great collection of those figures can be found on my Instagram page, [BézierSpirographsEveryDay](https://www.instagram.com/Bezierspirographseveryday?igsh=MWR2NXBtcGdhNWxyNg==).
 
 ![Spirograph over the letter J.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/myname.png?raw=true)
 
@@ -55,13 +55,18 @@ If $R_\mathcal{M} < R_\mathcal{W}$, the resulting curve is known as a **curtate 
 
 ![Curtate and prolate cycloids.](https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/art/fig07b.png?raw=true)
 
-The term **trochoids** refers to all cycloids, curtate cycloids, and prolate cycloids. The adjectives 'prolate' and 'curtate' can be applied to epi- and hypercycloids by considering $R_\mathcal{M}$on a similar way.
+The term **trochoids** refers to all cycloids, curtate cycloids, and prolate cycloids. The adjectives 'prolate' and 'curtate' can be applied to epi- and hypercycloids by considering $R_\mathcal{M}$ on a similar way.
 
 # Bézier curves and their tangent/normal vectors
 
-Many things can be said about Bézier curves; for instance, look at their [Wikipedia page](https://en.wikipedia.org/wiki/B%C3%A9zier_curve). I would like to emphasize their role in graphic design. The concatenation of multiple Bézier curves, referred to as a **path**, is a standard way of producing and encoding general-purpose curves in vector graphics. Most graphic design software allows users to create, visualize, and modify these curves with relative ease. Yet, their formulation is simple enough to be used in this model.
+The formulation on this page can be applied to a wide variety of parametric curves; the only requirements are that **(1)** it represents a closed curve of finite length, and **(2)** it is once-differentiable so that normal vectors can be computed.
+The particular choice of Bézier curves follows practical considerations.
 
-Given $t\in [0,1]$ and the *control points* $\mathbf{P}_0, \mathbf{P}_1, \mathbf{P}_2, \mathbf{P}_3$, a **cubic Bézier curve** is the collection of $\mathbf{B}(t)$ defined as
+Many things can be said about Bézier curves; for instance, look at their [Wikipedia page](https://en.wikipedia.org/wiki/B%C3%A9zier_curve). I would like to emphasize their role in graphic design. The concatenation of multiple Bézier curves, referred to as a **path**, is a standard way of producing and encoding general-purpose curves in vector graphics. Most graphic design software allows users to create, visualize, and modify these curves with relative ease. 
+
+Constructing explicit functions for a parametric curve with the shape of the letter 'J' (for example) will be challenging and time-consuming. Instead, it will be easy to use a graphic design software (like [Inkscape](https://inkscape.org/)) and draw a letter 'J' using vector graphics; the resulting object can be easily converted to a *path*, and then the data can be used to construct a parametric curve.
+
+Let's talk about the definition of cubic Bézier curves, as well as their properties. Given $t\in [0,1]$ and the *control points* $\mathbf{P}_0, \mathbf{P}_1, \mathbf{P}_2, \mathbf{P}_3$, a **cubic Bézier curve** is the collection of $\mathbf{B}(t)$ defined as
 
 $$
 \mathbf{B}(t) = (1-t)^3 \mathbf{P}_0 + 3(1-t)^2t \mathbf{P}_1 + 3(1-t) t^2 \mathbf{P}_2 + t^3 \mathbf{P}_3.
