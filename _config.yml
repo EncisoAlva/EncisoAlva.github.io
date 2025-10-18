@@ -61,10 +61,10 @@ timezone: America/Dallas # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    title: Art # Needed for Siteleaf
     output: true
-    description: "A bit of a blog, a bit of useful links" # The post list page content
-    feature_text: ''
+    description: "Outreach hobby project" # The post list page content
+    feature_text: 'Glissettes and Bezier Curves'
     feature_image: "https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main/img/banner_tulip.jpg?raw=true"
 
 # 6. Jekyll collections settings
@@ -127,8 +127,8 @@ navigation_header:
   url: /research/
 - title: Art
   url: /art/
-#- title: Blog
-#  url: /blog/
+- title: Art
+  url: /art/
 - title: CV
   url: https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main//files/EncisoAlva_CV.pdf?raw=true
 
