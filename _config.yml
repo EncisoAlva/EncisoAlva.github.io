@@ -127,8 +127,8 @@ navigation_header:
   url: /research/
 - title: Art
   url: /art/
-- title: Art
-  url: /art/
+#- title: Art
+#  url: /art/
 - title: CV
   url: https://github.com/EncisoAlva/EncisoAlva.github.io/blob/main//files/EncisoAlva_CV.pdf?raw=true
 
