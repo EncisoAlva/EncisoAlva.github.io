@@ -123,6 +123,8 @@ navigation_header:
   url: /
 - title: About me
   url: /about/
+- title: Art
+  url: /art/
 - title: Research
   url: /research/
 - title: CV
